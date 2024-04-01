@@ -2,6 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="darkslategray">#2f4f4f</color>
-    <color name="silver">#c0c0c0</color>
+    <color name="charcoal">#1a2421</color>
+    <color name="gainsboro">#dcdcdc</color>
 </resources>
