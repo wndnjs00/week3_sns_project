@@ -1,4 +1,4 @@
-package com.example.week3_sns_project.Login
+package com.example.week3_sns_project
 
 import android.os.Bundle
 import android.widget.ImageButton
