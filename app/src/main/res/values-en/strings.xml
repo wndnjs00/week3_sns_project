@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- detail 페이지 string -->
     <string name="app_name">week3_sns_project</string>
     <string name="title_name">Post Title</string>
     <string name="post_text">Contents of the Post</string>
+
+    <!-- home 페이지 string -->
     <string name="bts">BTS</string>
     <string name="btob">BTOB</string>
     <string name="idle">IDLE</string>
@@ -10,11 +13,16 @@
     <string name="time_tv">15 hours ago</string>
     <string name="title_content_tv">I\'m at the Yongsan branch of BTS cafe</string>
     <string name="title_content_tv2">I went to BTOB\'s concert</string>
+
+    <!-- mypage 페이지 string -->
     <string name="id">ID :</string>
     <string name="name">NAME :</string>
     <string name="artist">MY ARTIST :</string>
+
+    <!-- signin/out 페이지 string -->
     <string name="main_login_btn">Log in</string>
     <string name="main_signup_btn">Sign in</string>
+
     <string name="login_title_tv">Log in</string>
     <string name="login_email_tv">e-mail</string>
     <string name="login_email_hint">please enter your e-mail</string>
@@ -23,6 +31,7 @@
     <string name="login_name_tv">Name</string>
     <string name="login_name_hint">please enter your name</string>
     <string name="login_login_btn">Log in</string>
+
     <string name="signup_title_tv">Sign in</string>
     <string name="signup_email_tv">e-mail</string>
     <string name="signup_email_hint">please enter your e-mail</string>
