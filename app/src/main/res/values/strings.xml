@@ -5,13 +5,13 @@
     <string name="post_text">게시물 내용</string>
 
     <!-- home 페이지 string -->
-    <string name = "bts">BTS</string>
-    <string name = "btob">BTOB</string>
-    <string name = "idle">IDLE</string>
-    <string name = "content_tv">스타 게시판</string>
-    <string name = "time_tv">15시간 전</string>
-    <string name = "title_content_tv">방탄 카페 용산점에 왔어요</string>
-    <string name = "title_content_tv2">비투비 콘서트 갔다왔어요!!</string>
+    <string name="bts">BTS</string>
+    <string name="btob">BTOB</string>
+    <string name="idle">IDLE</string>
+    <string name="content_tv">스타 게시판</string>
+    <string name="time_tv">15시간 전</string>
+    <string name="title_content_tv">방탄 카페 용산점에 왔어요</string>
+    <string name="title_content_tv2">비투비 콘서트 갔다왔어요!!</string>
 
     <!-- mypage 페이지 string -->
     <string name="id">아이디 :</string>
