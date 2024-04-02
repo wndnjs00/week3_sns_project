@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="15dp"
+    tools:context=".HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <HorizontalScrollView
+            android:id="@+id/home_horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/home_constrainlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/home_background1_imageview"
+                    android:layout_width="180dp"
+                    android:layout_height="210dp"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_background_gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/home_bts_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_bts"
+                    app:layout_constraintEnd_toEndOf="@+id/home_background1_imageview"
+                    app:layout_constraintStart_toStartOf="@+id/home_background1_imageview"
+                    app:layout_constraintTop_toTopOf="@+id/home_background1_imageview" />
+
+                <TextView
+                    android:id="@+id/home_bts_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/bts"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/home_bts_imageview"
+                    app:layout_constraintStart_toStartOf="@+id/home_bts_imageview"
+                    app:layout_constraintTop_toBottomOf="@+id/home_bts_imageview" />
+
+
+                <ImageView
+                    android:id="@+id/home_background2_imageview"
+                    android:layout_width="180dp"
+                    android:layout_height="210dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/ic_background_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/home_background1_imageview"
+                    app:layout_constraintStart_toEndOf="@+id/home_background1_imageview"
+                    app:layout_constraintTop_toTopOf="@+id/home_background1_imageview" />
+
+                <ImageView
+                    android:id="@+id/home_btob_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_btob"
+                    app:layout_constraintEnd_toEndOf="@+id/home_background2_imageview"
+                    app:layout_constraintStart_toStartOf="@+id/home_background2_imageview"
+                    app:layout_constraintTop_toTopOf="@+id/home_background2_imageview" />
+
+                <TextView
+                    android:id="@+id/home_btob_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/btob"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/home_btob_imageview"
+                    app:layout_constraintStart_toStartOf="@+id/home_btob_imageview"
+                    app:layout_constraintTop_toBottomOf="@+id/home_btob_imageview" />
+
+
+                <ImageView
+                    android:id="@+id/home_background3_imageview"
+                    android:layout_width="180dp"
+                    android:layout_height="210dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_background_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/home_background2_imageview"
+                    app:layout_constraintStart_toEndOf="@+id/home_background2_imageview"
+                    app:layout_constraintTop_toTopOf="@+id/home_background2_imageview" />
+
+                <ImageView
+                    android:id="@+id/home_idle_imageview"
+                    android:layout_width="165dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_idle"
+                    app:layout_constraintEnd_toEndOf="@+id/home_background3_imageview"
+                    app:layout_constraintStart_toStartOf="@+id/home_background3_imageview"
+                    app:layout_constraintTop_toTopOf="@+id/home_background3_imageview" />
+
+                <TextView
+                    android:id="@+id/home_idle_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/idle"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/home_idle_imageview"
+                    app:layout_constraintStart_toStartOf="@+id/home_background3_imageview"
+                    app:layout_constraintTop_toBottomOf="@+id/home_idle_imageview" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </HorizontalScrollView>
+
+
+
+
+        <ImageView
+            android:id="@+id/home_background4_imageview"
+            android:layout_width="370dp"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_background_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_horizontalScrollView" />
+
+        <ImageView
+            android:id="@+id/home_profile_imageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toStartOf="@+id/home_background4_imageview"
+            app:layout_constraintTop_toTopOf="@+id/home_background4_imageview" />
+
+        <TextView
+            android:id="@+id/home_bts_textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bts"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/home_profile_imageview"
+            app:layout_constraintTop_toTopOf="@+id/home_background4_imageview" />
+
+        <TextView
+            android:id="@+id/home_content_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content_tv"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@+id/home_bts_textview2"
+            app:layout_constraintTop_toBottomOf="@+id/home_bts_textview2" />
+
+        <TextView
+            android:id="@+id/home_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_tv"
+            android:textSize="11sp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/home_content_textview"
+            app:layout_constraintStart_toEndOf="@+id/home_content_textview"
+            app:layout_constraintTop_toTopOf="@+id/home_content_textview" />
+
+        <ImageView
+            android:id="@+id/home_dot_imageview"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_dot"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/home_background4_imageview"
+            app:layout_constraintTop_toTopOf="@+id/home_bts_textview2" />
+
+        <TextView
+            android:id="@+id/home_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_content_tv"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/home_profile_imageview"
+            app:layout_constraintTop_toBottomOf="@+id/home_profile_imageview" />
+
+        <ImageView
+            android:id="@+id/home_bts_imageview2"
+            android:layout_width="340dp"
+            android:layout_height="160dp"
+            android:src="@drawable/img_bts"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/home_background4_imageview"
+            app:layout_constraintStart_toStartOf="@+id/home_background4_imageview"
+            app:layout_constraintTop_toBottomOf="@+id/home_title_textview" />
+
+
+
+        <ImageView
+            android:id="@+id/home_background5_imageview"
+            android:layout_width="370dp"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_background_gray"
+            app:layout_constraintEnd_toEndOf="@+id/home_background4_imageview"
+            app:layout_constraintStart_toStartOf="@+id/home_background4_imageview"
+            app:layout_constraintTop_toBottomOf="@+id/home_background4_imageview" />
+
+
+        <ImageView
+            android:id="@+id/home_profile_imageview2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/profile"
+            app:layout_constraintStart_toStartOf="@+id/home_background5_imageview"
+            app:layout_constraintTop_toTopOf="@+id/home_background5_imageview" />
+
+        <TextView
+            android:id="@+id/home_btob_textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/btob"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/home_profile_imageview2"
+            app:layout_constraintTop_toTopOf="@+id/home_background5_imageview" />
+
+        <TextView
+            android:id="@+id/home_content_textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content_tv"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@+id/home_btob_textview2"
+            app:layout_constraintTop_toBottomOf="@id/home_btob_textview2"/>
+
+        <TextView
+            android:id="@+id/home_time_textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_tv"
+            android:textSize="11sp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/home_content_textview2"
+            app:layout_constraintStart_toEndOf="@+id/home_content_textview2"
+            app:layout_constraintTop_toBottomOf="@+id/home_btob_textview2" />
+
+        <ImageView
+            android:id="@+id/home_dot_imageview2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_dot"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/home_background5_imageview"
+            app:layout_constraintTop_toTopOf="@+id/home_btob_textview2" />
+
+        <TextView
+            android:id="@+id/home_title_textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_content_tv2"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/home_profile_imageview2"
+            app:layout_constraintTop_toBottomOf="@+id/home_profile_imageview2" />
+
+        <ImageView
+            android:id="@+id/home_btob_imageview2"
+            android:layout_width="340dp"
+            android:layout_height="160dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_btob"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/home_background5_imageview"
+            app:layout_constraintStart_toStartOf="@+id/home_background5_imageview"
+            app:layout_constraintTop_toBottomOf="@+id/home_title_textview2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
