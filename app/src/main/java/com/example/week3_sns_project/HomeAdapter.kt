@@ -7,8 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class HomeAdapter(private val itemList: ArrayList<DataModel>)
-    :RecyclerView.Adapter<HomeAdapter.HomeViewHolder>(){
+class HomeAdapter(private val itemList: ArrayList<DataModel>) : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>(){
 
         var onItemClick : ((DataModel) -> Unit)? = null
 
@@ -17,8 +16,7 @@ class HomeAdapter(private val itemList: ArrayList<DataModel>)
 
         val title = itemView.findViewById<TextView>(R.id.home_title_textview)
         val image = itemView.findViewById<ImageView>(R.id.home_bts_imageview2)
-
-        }
+    }
 
 
 

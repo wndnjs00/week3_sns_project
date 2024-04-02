@@ -14,6 +14,12 @@ class HomeFragment : Fragment() {
     private lateinit var binding : FragmentHomeBinding
     private lateinit var itemList : ArrayList<DataModel>
 
+    private val stringModel = StringModel(contentId = R.string.title_content_tv)
+    private val stringModel2 = StringModel(contentId = R.string.title_content_tv2)
+    private val stringModel3 = StringModel(contentId = R.string.post_tv1)
+    private val stringModel4 = StringModel(contentId = R.string.post_tv2)
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -22,8 +28,10 @@ class HomeFragment : Fragment() {
 
         itemList = ArrayList()
 
-        itemList.add(DataModel(R.drawable.img_bts, "방탄 카페 용산점에 왔어요", "게시글 내용 어쩌구"))
-        itemList.add(DataModel(R.drawable.img_btob, "비투비 콘서트 갔다왔어요!!","게시글 내용 어쩌구2"))
+//        itemList.add(DataModel(R.drawable.img_bts, "방탄 카페 용산점에 왔어요", "게시글 내용1"))
+//        itemList.add(DataModel(R.drawable.img_btob, "비투비 콘서트 갔다왔어요!!", "게시글 내용2"))
+        itemList.add(DataModel(R.drawable.img_bts, stringModel.toString(requireContext()), stringModel3.toString(requireContext())))
+        itemList.add(DataModel(R.drawable.img_btob, stringModel2.toString(requireContext()), stringModel4.toString(requireContext())))
 
         val adapter = HomeAdapter(itemList)
         binding.homeRecyclerview.adapter = adapter
@@ -31,6 +39,9 @@ class HomeFragment : Fragment() {
 
         adapter.onItemClick = {
             val intent = Intent(context, DetailActivity::class.java)
+            intent.putExtra("title",it.title)
+            intent.putExtra("content",it.content)
+            intent.putExtra("image",it.image)
             startActivity(intent)
         }
 
@@ -38,15 +49,7 @@ class HomeFragment : Fragment() {
         binding.homeRecyclerview.layoutManager = GridLayoutManager(context,1)
 
 
-
-
         return binding.root
-
-
     }
-
-
-
-
 
 }
