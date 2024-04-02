@@ -7,17 +7,18 @@
     android:layout_height="match_parent"
     android:background="@color/charcoal"
     android:layout_weight="1"
-    tools:context=".MyPage">
+    tools:context=".MyPageActivity">
 
-    <ImageView
+    <!--    오류 해결 방법 모르겠음..-->
+    <ImageButton
+        android:id="@+id/mypage_btn_back"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/ic_cancel"
-        android:layout_marginTop="30dp"
         android:layout_marginLeft="30dp"
-        android:background="@android:color/transparent"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_cancel"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -31,6 +32,7 @@
         android:id="@+id/gray_constraintlayout"
         android:layout_width="300dp"
         android:layout_height="300dp"
+        android:elevation="20dp"
         android:background="@drawable/rectangular_mypage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -78,9 +80,11 @@
         android:layout_height="120dp"
         android:background="@drawable/round_profile"
         android:layout_marginBottom="70dp"
+        android:elevation="30dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
