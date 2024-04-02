@@ -1,10 +1,9 @@
-package com.example.week3_sns_project.Login
+package com.example.week3_sns_project
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.week3_sns_project.R
 
 class FirstActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
