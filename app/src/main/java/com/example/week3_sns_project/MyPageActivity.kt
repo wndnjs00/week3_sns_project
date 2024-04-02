@@ -2,11 +2,12 @@ package com.example.week3_sns_project
 
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 class MyPageActivity : AppCompatActivity() {
 
-    private lateinit var mypage_btn_back:ImageButton
+    private lateinit var mypage_btn_back: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
