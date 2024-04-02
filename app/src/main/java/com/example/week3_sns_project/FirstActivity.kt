@@ -9,7 +9,7 @@ class FirstActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_first)
 
         val loginButton: Button = findViewById(R.id.main_login_button)
         val signUpButton: Button = findViewById(R.id.main_signup_button)
