@@ -1,6 +1,52 @@
 <resources>
+    <!-- detail 페이지 string -->
     <string name="app_name">week3_sns_project</string>
+<<<<<<< HEAD
+    <string name="title_name">게시물 제목</string>
+    <string name="post_text">게시물 내용</string>
+
+    <!-- home 페이지 string -->
+    <string name = "bts">BTS</string>
+    <string name = "btob">BTOB</string>
+    <string name = "idle">IDLE</string>
+    <string name = "content_tv">스타 게시판</string>
+    <string name = "time_tv">15시간 전</string>
+    <string name = "title_content_tv">방탄 카페 용산점에 왔어요</string>
+    <string name = "title_content_tv2">비투비 콘서트 갔다왔어요!!</string>
+
+    <!-- mypage 페이지 string -->
+    <string name="id">아이디 :</string>
+    <string name="name">이름 :</string>
+    <string name="artist">내 아티스트 :</string>
+
+    <!-- signin/out 페이지 string -->
+    <string name="main_login_btn">로그인</string>
+    <string name="main_signup_btn">회원가입</string>
+
+    <string name="login_title_tv">로그인</string>
+    <string name="login_email_tv">이메일</string>
+    <string name="login_email_hint">이메일을 입력해주세요</string>
+    <string name="login_password_tv">비밀번호</string>
+    <string name="login_password_hint">비밀번호를 입력해주세요</string>
+    <string name="login_name_tv">이름</string>
+    <string name="login_name_hint">이름을 입력해주세요</string>
+    <string name="login_login_btn">로그인</string>
+
+
+    <string name="signup_title_tv">회원가입</string>
+    <string name="signup_email_tv">이메일</string>
+    <string name="signup_email_hint">이메일을 입력해주세요</string>
+    <string name="signup_password_tv">비밀번호</string>
+    <string name="signup_password_hint">비밀번호를 입력해주세요</string>
+    <string name="signup_checkpassword_tv">비밀번호 확인</string>
+    <string name="signup_checkpassword_hint">비밀번호를 다시 입력해주세요</string>
+    <string name="signup_name_tv">이름</string>
+    <string name="signup_name_hint">이름을 입력해주세요</string>
+    <string name="signup_signup_btn">회원가입</string>
+</resources>
+=======
 <!--    <string name="id">아이디 :</string>-->
 <!--    <string name="name">이름 :</string>-->
 <!--    <string name="artist">내 아티스트 :</string>-->
 </resources>
+>>>>>>> 2fef1d5f3bade1f3b01d46caf02fb03b4a9ed2e0
