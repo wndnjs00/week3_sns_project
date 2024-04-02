@@ -1,30 +1,4 @@
 <resources>
     <string name="app_name">week3_sns_project</string>
 
-    <string name="main_login_btn">로그인</string>
-    <string name="main_signup_btn">회원가입</string>
-
-    <string name="login_title_tv">로그인</string>
-    <string name="login_email_tv">이메일</string>
-    <string name="login_email_hint">이메일을 입력해주세요</string>
-    <string name="login_password_tv">비밀번호</string>
-    <string name="login_password_hint">비밀번호를 입력해주세요</string>
-    <string name="login_name_tv">이름</string>
-    <string name="login_name_hint">이름을 입력해주세요</string>
-    <string name="login_login_btn">로그인</string>
-
-
-    <string name="signup_title_tv">회원가입</string>
-    <string name="signup_email_tv">이메일</string>
-    <string name="signup_email_hint">이메일을 입력해주세요</string>
-    <string name="signup_password_tv">비밀번호</string>
-    <string name="signup_password_hint">비밀번호를 입력해주세요</string>
-    <string name="signup_checkpassword_tv">비밀번호 확인</string>
-    <string name="signup_checkpassword_hint">비밀번호를 다시 입력해주세요</string>
-    <string name="signup_name_tv">이름</string>
-    <string name="signup_name_hint">이름을 입력해주세요</string>
-    <string name="signup_signup_btn">회원가입</string>
-
-
-
 </resources>
