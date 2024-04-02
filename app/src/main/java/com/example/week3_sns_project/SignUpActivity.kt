@@ -46,8 +46,7 @@ class SignUpActivity : AppCompatActivity() {
                 intent.putExtra("email",signupEmailEdittext.text.toString()) // 근데 text.toString() 말고 toString() 만 쓰는거랑 무슨 차이지?(팀원 리뷰 요청)
                 intent.putExtra("password",signupPasswordEdittext.text.toString())
                 intent.putExtra("name",signupNameEdittext.text.toString())
-                finish()
-                //startActivity(intent) 꼭 써야지 데이터가 전달되는건가??
+                startActivity(intent)
             }
         }
     }
