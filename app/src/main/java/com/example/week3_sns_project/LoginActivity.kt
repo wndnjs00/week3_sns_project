@@ -54,8 +54,6 @@ class LoginActivity : AppCompatActivity() {
             } else if(emailList.contains(loginEmailEdittext.toString())&& passwordList.contains(loginPasswordEdittext.toString())&&nameList.contains(loginNameEdittext.toString())) {
                 /*
                 - 회원가입 정보에 들어있는 데이터인 경우
-                - 부정문으로 하면 코드 순서상 더 좋을텐데 방법을 모르겠음
-                - .text.toString() 이랑 .toString()이랑 차이 몰라서 코드 짧은거 사용해봄
                 - 순서까지 매치하는 코드 짜기에는 아직 힘들 것 같아서 임시로 contain만 사용함
                 */
 

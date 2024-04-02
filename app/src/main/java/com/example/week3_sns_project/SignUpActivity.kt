@@ -18,14 +18,14 @@ class SignUpActivity : AppCompatActivity() {
     private lateinit var signupCheckpasswordEdittext: EditText
     private lateinit var signupNameEdittext: EditText
     private lateinit var signupSignupButton: Button
-    private lateinit var singupBackButton: ImageButton
+    private lateinit var signupBackButton: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_sign_up)
 
-        singupBackButton = findViewById(R.id.signup_back_button)
+        signupBackButton = findViewById(R.id.signup_back_button)
         signupSignupButton = findViewById(R.id.signup_signup_button)
 
         signupEmailEdittext = findViewById(R.id.signup_email_edittext)
@@ -33,7 +33,7 @@ class SignUpActivity : AppCompatActivity() {
         signupCheckpasswordEdittext = findViewById(R.id.signup_checkpassword_edittext)
         signupNameEdittext = findViewById(R.id.signup_name_edittext)
 
-        singupBackButton.setOnClickListener {
+        signupBackButton.setOnClickListener {
             if (signupEmailEdittext.length() == 0 || signupPasswordEdittext.length() == 0 || signupCheckpasswordEdittext.length() == 0 || signupNameEdittext.length() == 0) {
                 // 정보를 다 입력하지 않은 경우
                 Toast.makeText(this, "정보를 아직 다 입력하지 않았습니다", Toast.LENGTH_SHORT).show()
