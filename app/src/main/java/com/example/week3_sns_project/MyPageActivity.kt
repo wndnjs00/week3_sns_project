@@ -12,6 +12,7 @@ class MyPageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_mypage)
+
         mypage_btn_back = findViewById(R.id.mypage_btn_back)
         mypage_btn_back.setOnClickListener {
             finish()
