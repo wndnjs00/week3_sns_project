@@ -2,6 +2,7 @@ package com.example.week3_sns_project
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.week3_sns_project.Home.HomeFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
