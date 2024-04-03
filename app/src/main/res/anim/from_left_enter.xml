@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android">
 
     <set xmlns:android="http://schemas.android.com/apk/res/android">
         <!--    duration : 애니메이션 완료에 걸리는 시간 millisecond 단위
@@ -15,7 +14,4 @@
             android:toXDelta="0%"
 
             />
-    </set>
-
-
 </set>
