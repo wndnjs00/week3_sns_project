@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.week3_sns_project.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -54,7 +55,6 @@ class HomeFragment : Fragment() {
 
         // GridLayoutManager사용해 리사이클러뷰 아이템 한줄에 1개씩 배치
         binding.homeRecyclerview.layoutManager = GridLayoutManager(context,1)
-
 
         return binding.root
     }

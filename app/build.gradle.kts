@@ -37,6 +37,7 @@ android {
     // 뷰 바인딩
     buildFeatures{
         viewBinding = true
+        dataBinding = true
     }
 
 }
