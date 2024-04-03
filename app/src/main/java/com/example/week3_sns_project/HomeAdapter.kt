@@ -14,6 +14,7 @@ class HomeAdapter(private val itemList: ArrayList<DataModel>) : RecyclerView.Ada
 
     class HomeViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
 
+        val nickname = itemView.findViewById<TextView>(R.id.home_bts_textview2)
         val title = itemView.findViewById<TextView>(R.id.home_title_textview)
         val image = itemView.findViewById<ImageView>(R.id.home_bts_imageview2)
     }
@@ -39,6 +40,7 @@ class HomeAdapter(private val itemList: ArrayList<DataModel>) : RecyclerView.Ada
 
         val list = itemList[position]
 
+        holder.nickname.text = list.nickName
         holder.title.text = list.title
         holder.image.setImageResource(list.image)
 
