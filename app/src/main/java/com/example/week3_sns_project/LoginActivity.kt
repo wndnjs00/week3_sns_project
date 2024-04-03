@@ -30,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         val loginBackButton: ImageButton = findViewById(R.id.login_back_button)
-        val loginButton : Button = findViewById(R.id.login_login_button)
+        val loginButton: Button = findViewById(R.id.login_login_button)
         loginEmailEdittext = findViewById(R.id.login_email_edittext)
         loginPasswordEdittext = findViewById(R.id.login_password_edittext)
         loginNameEdittext = findViewById(R.id.login_name_edittext)
@@ -44,27 +44,33 @@ class LoginActivity : AppCompatActivity() {
         val nameData = intent.getStringExtra("name")
         nameList.add(nameData ?: "-1")
 
-        loginBackButton.setOnClickListener{
+        loginBackButton.setOnClickListener {
             finish()
         }
 
         loginButton.setOnClickListener {
-            if(loginEmailEdittext.length()==0||loginPasswordEdittext.length()==0||loginNameEdittext.length()==0) {
-                Toast.makeText(this, "입력하지 않은 정보가 존재합니다!",Toast.LENGTH_SHORT).show()
-            } else if(emailList.contains(loginEmailEdittext.toString())&& passwordList.contains(loginPasswordEdittext.toString())&&nameList.contains(loginNameEdittext.toString())) {
+            if (loginEmailEdittext.length() == 0 || loginPasswordEdittext.length() == 0 || loginNameEdittext.length() == 0) {
+                Toast.makeText(this, "입력하지 않은 정보가 존재합니다!", Toast.LENGTH_SHORT).show()
+            } else if (emailList.contains(loginEmailEdittext.text.toString()) && passwordList.contains(
+                    loginPasswordEdittext.text.toString()
+                ) && nameList.contains(loginNameEdittext.text.toString())
+            ) {
                 /*
                 - 회원가입 정보에 들어있는 데이터인 경우
                 - 순서까지 매치하는 코드 짜기에는 아직 힘들 것 같아서 임시로 contain만 사용함
                 */
-
-                val intent = Intent(this,  MainActivity::class.java)
-                intent.putExtra("email",loginEmailEdittext.text.toString())
-                intent.putExtra("name",loginNameEdittext.text.toString())
+                val intent = Intent(this, MainActivity::class.java)
+                intent.putExtra("email", loginEmailEdittext.text.toString())
+                intent.putExtra("name", loginNameEdittext.text.toString())
                 startActivity(intent)
-
+                /*
+                잘 모르겠는 부분: 데이터를 일단은 필요한 액티비티한테만 넘겨주고 싶은데,
+                화면 전환시에는 또 다른 액티비티(데이터가 필요없는 액티비티) 가 필요한 경우
+                이렇게 일일히 액티비티마다 데이터를 넘겨줘야 하나?
+                */
             } else {
                 // 회원가입 정보에서 받은 데이터가 아닌 경우
-                Toast.makeText(this,"유효하지 않은 정보입니다!",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "유효하지 않은 정보입니다!", Toast.LENGTH_SHORT).show()
             }
 
         }

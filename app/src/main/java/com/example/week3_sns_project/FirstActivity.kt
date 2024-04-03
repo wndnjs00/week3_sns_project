@@ -17,7 +17,14 @@ class FirstActivity : AppCompatActivity() {
         val loginIntent = Intent(this@FirstActivity, LoginActivity::class.java)
         val signUpIntent = Intent(this@FirstActivity, SignUpActivity::class.java)
 
+        val emailData = intent.getStringExtra("email")
+        val passwordData = intent.getStringExtra("password")
+        val nameData = intent.getStringExtra("name")
+
         loginButton.setOnClickListener{
+            loginIntent.putExtra("email",emailData)
+            loginIntent.putExtra("password",passwordData)
+            loginIntent.putExtra("name",nameData)
             startActivity(loginIntent)
         }
 

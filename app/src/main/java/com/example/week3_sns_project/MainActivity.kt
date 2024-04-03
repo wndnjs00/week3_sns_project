@@ -1,5 +1,6 @@
 package com.example.week3_sns_project
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -7,11 +8,16 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
         BottomNavigation()
+
+        val emailData = intent.getStringExtra("email")
+        val nameData = intent.getStringExtra("name")
+        val intentToMyPage = Intent(this, MypageFragment::class.java)
     }
 
 
@@ -20,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     private fun BottomNavigation(){
 
 
-        val bottonm_nav = findViewById<BottomNavigationView>(R.id.main_bottomnavgation)
+        val bottom_nav = findViewById<BottomNavigationView>(R.id.main_bottomnavgation)
 
 
         // main_framelayout레이아웃을 HomeFragment로 대체
@@ -29,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             .commitAllowingStateLoss()
 
 
-        bottonm_nav.setOnItemSelectedListener { item ->
+        bottom_nav.setOnItemSelectedListener { item ->
 
             when (item.itemId){
 
@@ -46,6 +52,7 @@ class MainActivity : AppCompatActivity() {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.main_framelayout, MypageFragment())
                         .commitAllowingStateLoss()
+
                     return@setOnItemSelectedListener true
                 }
 
