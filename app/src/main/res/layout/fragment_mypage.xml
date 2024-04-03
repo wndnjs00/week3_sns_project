@@ -44,6 +44,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:minHeight="25dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="100dp"
                     android:text="@string/id"
@@ -55,6 +56,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:minHeight="25dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="150dp"
                     android:text="@string/name"
@@ -66,6 +68,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:minHeight="25dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="200dp"
                     android:text="@string/artist"
