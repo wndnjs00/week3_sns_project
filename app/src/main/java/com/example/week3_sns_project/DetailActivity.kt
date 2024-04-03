@@ -46,15 +46,18 @@ class DetailActivity : AppCompatActivity() {
         // HomeFragment에서 보낸 데이터 받아오기
         val title = intent.extras?.getString("title")
         val content = intent.extras?.getString("content")
-        val image = intent.extras?.getInt("image")
+        val image = intent.extras?.getInt("image")      //image는 타입을 int로 설정했기때문에 getInt로 받아오기
 
 
+        // 레이아웃과 데이터 연결
         post_title_tv.text = title
         post_content_tv.text = content
 
         if (image != null) {
             idol_image.setImageResource(image)
         }
+
+
 
 
     }
