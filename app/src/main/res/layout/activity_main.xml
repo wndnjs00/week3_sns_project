@@ -20,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
     </FrameLayout>
+    <!--    FrameLayout 을 사용하는 이유가 궁금합니다-->
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

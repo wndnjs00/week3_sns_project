@@ -10,6 +10,7 @@ import android.widget.ImageView
 
 class MypageFragment : Fragment() {
 
+    private lateinit var mypageBtnBack: ImageView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -17,9 +18,12 @@ class MypageFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_mypage, container, false)
 
-
-
+        mypageBtnBack.findViewById<ImageView>(R.id.mypage_btn_back)
+        mypageBtnBack.setOnClickListener {
+            activity?.supportFragmentManager
+                ?.beginTransaction()
+                ?.remove(this)
+                ?.commit()
+        }
     }
-
-
 }
