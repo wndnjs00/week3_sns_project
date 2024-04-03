@@ -9,15 +9,19 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var emailData : String
+    lateinit var nameData : String
+    lateinit var intentToMyPage : Intent
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
         BottomNavigation()
 
-        val emailData = intent.getStringExtra("email")
-        val nameData = intent.getStringExtra("name")
-        val intentToMyPage = Intent(this, MypageFragment::class.java)
+        emailData = intent.getStringExtra("email") ?: "-1"
+        nameData = intent.getStringExtra("name") ?: "-1"
+        intentToMyPage = Intent(this, MypageFragment::class.java)
     }
 
 
@@ -50,9 +54,9 @@ class MainActivity : AppCompatActivity() {
                 // mypage클릭시 MypageFragment()로 대체
                 R.id.mypage -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_framelayout, MypageFragment())
+                        .replace(R.id.main_framelayout, MypageFragment()) // fragment 를 쓸 때는 frameLayout을 꼭 써야하는가?
                         .commitAllowingStateLoss()
-
+                    // intent 못넘김 .. 데이터 어떻게 넘길지 모르겠음 (추가공부 필요)
                     return@setOnItemSelectedListener true
                 }
 
