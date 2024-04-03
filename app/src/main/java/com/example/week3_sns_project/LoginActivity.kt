@@ -20,6 +20,9 @@ class LoginActivity : AppCompatActivity() {
 
         loginBackButton.setOnClickListener{
             finish()
+            //화면전환 애니메이션
+            overridePendingTransition(R.anim.from_left_enter, R.anim.to_left_exit)
+
         }
 
         loginButton.setOnClickListener {
