@@ -11,13 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 // RecyclerView.Adapter<HomeAdapter.HomeViewHolder> 상속받음
 class HomeAdapter(private val itemList: ArrayList<DataModel>) : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>(){
 
-    // interface 사용해서 클릭이벤트 추가(interface라서 실행코드 안적고 함수만 적음)
-    interface OnItemClick {
-        fun onClick(view : View , position: Int)
-    }
-
     // 클릭 이벤트 추가부분
-    var onItemClick : OnItemClick? = null
+    var onItemClick : ((DataModel) -> Unit)? = null
 
 
     // ViewHolder는 기본적으로 화면에 표시될데이터나 아이템들 저장하는 역할
@@ -47,14 +42,14 @@ class HomeAdapter(private val itemList: ArrayList<DataModel>) : RecyclerView.Ada
     // 데이터 연결
     override fun onBindViewHolder(holder: HomeViewHolder, position: Int) {
 
-
+        // HomeViewHolder에 데이터를 연결
         holder.nickname.text = itemList[position].nickName
         holder.title.text = itemList[position].title
         holder.image.setImageResource(itemList[position].image)
 
-        // 클릭 이벤트 추가부분
+        // 클릭 이벤트 추가
         holder.itemView.setOnClickListener {
-            onItemClick?.onClick(it, position)
+            onItemClick?.invoke(itemList[position])
         }
 
     }
