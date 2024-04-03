@@ -16,11 +16,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/home_profile_imageview"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/round_profile"
+        android:src="@drawable/ic_btob"
         android:layout_marginTop="15dp"
         android:layout_marginStart="15dp"
         app:layout_constraintStart_toStartOf="@+id/home_background4_imageview"

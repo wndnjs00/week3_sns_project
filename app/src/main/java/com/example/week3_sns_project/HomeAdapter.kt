@@ -21,6 +21,7 @@ class HomeAdapter(private val itemList: ArrayList<DataModel>) : RecyclerView.Ada
         val nickname = itemView.findViewById<TextView>(R.id.home_bts_textview2)
         val title = itemView.findViewById<TextView>(R.id.home_title_textview)
         val image = itemView.findViewById<ImageView>(R.id.home_bts_imageview2)
+        val profile_img = itemView.findViewById<ImageView>(R.id.home_profile_imageview)
     }
 
 
@@ -46,6 +47,7 @@ class HomeAdapter(private val itemList: ArrayList<DataModel>) : RecyclerView.Ada
         holder.nickname.text = itemList[position].nickName
         holder.title.text = itemList[position].title
         holder.image.setImageResource(itemList[position].image)
+        holder.profile_img.setImageResource(itemList[position].image)
 
         // 클릭 이벤트 추가
         holder.itemView.setOnClickListener {

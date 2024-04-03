@@ -33,8 +33,8 @@ class HomeFragment : Fragment() {
 
         // itemList에 image,title,content,nickname에 해당하는 데이터 추가
         // title,content에는 string값을 넣어줌
-        itemList.add(DataModel(R.drawable.img_bts, stringModel.toString(requireContext()), stringModel3.toString(requireContext()), "BTS"))
-        itemList.add(DataModel(R.drawable.img_btob, stringModel2.toString(requireContext()), stringModel4.toString(requireContext()), "BTOB"))
+        itemList.add(DataModel(R.drawable.img_bts, stringModel.toString(requireContext()), stringModel3.toString(requireContext()), "BTS", R.drawable.img_bts))
+        itemList.add(DataModel(R.drawable.img_btob, stringModel2.toString(requireContext()), stringModel4.toString(requireContext()), "BTOB", R.drawable.img_btob))
 
 
         val adapter = HomeAdapter(itemList)             // HomeAdapter에 itemList데이터 담기
