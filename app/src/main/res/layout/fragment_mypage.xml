@@ -7,6 +7,7 @@
     android:id="@+id/main"
     android:background="@color/charcoal"
     android:layout_weight="1"
+    android:background="@color/charcoal"
     tools:context=".MypageFragment">
 
 
@@ -21,16 +22,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/mypage_btn_back"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="30dp"
-                android:clickable="true"
-                android:src="@drawable/ic_cancel"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+<!--            <ImageView-->
+<!--                android:id="@+id/mypage_btn_back"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:clickable="true"-->
+<!--                android:src="@drawable/ic_cancel"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -57,7 +58,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="100dp"
-                    android:text="아이디"
+                    android:text="@string/id"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintLeft_toLeftOf="@+id/gray_constraintlayout"
@@ -68,7 +69,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="150dp"
-                    android:text="이름"
+                    android:text="@string/name"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintLeft_toLeftOf="@+id/gray_constraintlayout"
@@ -79,7 +80,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="200dp"
-                    android:text="예술가"
+                    android:text="@string/artist"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintLeft_toLeftOf="@+id/gray_constraintlayout"

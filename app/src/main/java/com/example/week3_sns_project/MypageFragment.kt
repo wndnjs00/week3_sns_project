@@ -25,9 +25,5 @@ class MypageFragment : Fragment() {
                 ?.remove(this)
                 ?.commit()
         }
-
-
     }
-
-
 }
