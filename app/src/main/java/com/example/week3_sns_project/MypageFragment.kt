@@ -17,6 +17,5 @@ class MypageFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_mypage, container, false)
 
-
     }
 }
