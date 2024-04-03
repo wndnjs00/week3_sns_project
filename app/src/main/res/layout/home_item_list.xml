@@ -16,11 +16,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/home_profile_imageview"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/round_profile"
+        android:src="@drawable/ic_btob"
         android:layout_marginTop="15dp"
         android:layout_marginStart="15dp"
         app:layout_constraintStart_toStartOf="@+id/home_background4_imageview"
@@ -30,6 +30,7 @@
         android:id="@+id/home_bts_textview2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:minHeight="25dp"
         android:text="@string/bts"
         android:layout_marginTop="20dp"
         android:layout_marginStart="15dp"
@@ -43,6 +44,7 @@
         android:id="@+id/home_content_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:minHeight="15dp"
         android:text="@string/content_tv"
         android:textSize="11sp"
         app:layout_constraintStart_toStartOf="@+id/home_bts_textview2"
@@ -52,6 +54,7 @@
         android:id="@+id/home_time_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:minHeight="15dp"
         android:text="@string/time_tv"
         android:textSize="11sp"
         android:layout_marginStart="30dp"
@@ -73,6 +76,7 @@
         android:id="@+id/home_title_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:minHeight="25dp"
         android:text="@string/title_content_tv"
         android:textStyle="bold"
         android:textColor="@color/black"

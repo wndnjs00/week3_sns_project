@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         emailData = intent.getStringExtra("email") ?: "-1"
         nameData = intent.getStringExtra("name") ?: "-1"
-        intentToMyPage = Intent(this, MypageFragment::class.java)
+//        intentToMyPage = Intent(this, MypageFragment::class.java)
     }
 
 

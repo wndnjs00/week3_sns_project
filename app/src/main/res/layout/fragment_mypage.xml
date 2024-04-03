@@ -44,6 +44,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:minHeight="25dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="100dp"
                     android:text="@string/id"
@@ -55,6 +56,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:minHeight="25dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="150dp"
                     android:text="@string/name"
@@ -66,6 +68,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:minHeight="25dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="200dp"
                     android:text="@string/artist"
@@ -77,11 +80,15 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/mypage_profile_imageview"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginTop="80dp"
+                android:src="@drawable/img_bts"
                 android:background="@drawable/round_profile"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
                 android:elevation="30dp"
                 app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
                 app:layout_constraintEnd_toEndOf="parent"
