@@ -28,10 +28,10 @@ class HomeFragment : Fragment() {
 
         itemList = ArrayList()
 
-//        itemList.add(DataModel(R.drawable.img_bts, "방탄 카페 용산점에 왔어요", "게시글 내용1"))
-//        itemList.add(DataModel(R.drawable.img_btob, "비투비 콘서트 갔다왔어요!!", "게시글 내용2"))
-        itemList.add(DataModel(R.drawable.img_bts, stringModel.toString(requireContext()), stringModel3.toString(requireContext())))
-        itemList.add(DataModel(R.drawable.img_btob, stringModel2.toString(requireContext()), stringModel4.toString(requireContext())))
+//        itemList.add(DataModel(R.drawable.img_bts, "방탄 카페 용산점에 왔어요", "게시글 내용1" , "BTS"))
+//        itemList.add(DataModel(R.drawable.img_btob, "비투비 콘서트 갔다왔어요!!", "게시글 내용2","BTOB"))
+        itemList.add(DataModel(R.drawable.img_bts, stringModel.toString(requireContext()), stringModel3.toString(requireContext()), "BTS"))
+        itemList.add(DataModel(R.drawable.img_btob, stringModel2.toString(requireContext()), stringModel4.toString(requireContext()), "BTOB"))
 
         val adapter = HomeAdapter(itemList)
         binding.homeRecyclerview.adapter = adapter
