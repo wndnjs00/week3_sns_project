@@ -13,7 +13,7 @@
     <string name="time_tv">15 hours ago</string>
     <string name="title_content_tv">I\'m at the Yongsan branch of BTS cafe</string>
     <string name="title_content_tv2">I went to BTOB\'s concert!!</string>
-    <string name="post_tv1">Post Title</string>
+    <string name="post_tv1">Post 1 content, Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,</string>
     <string name="post_tv2">Contents of the Post</string>
 
     <!-- mypage 페이지 string -->
@@ -54,8 +54,11 @@
     <string name="signup_name_hint">please enter your name</string>
     <string name="signup_signup_btn">Sign in</string>
     <string name="mypage">My Page</string>
+
     <string name="idle_title">(G)I-DLE</string>
     <string name="idle_info1">Agency : Cube Entertainment</string>
     <string name="idle_info2">Date of debut : 2018 / 5 / 2</string>
     <string name="idle_info3">IDLE and (G)I-DLE are a girl group consisting of a total of five members, including Mi-yeon, Min-ni, Soyeon, Yuqi, and Shuhua. They have been popular with a rare concept since their debut, winning first place in music broadcasting, top music charts, and seven rookie awards in 20 days after their debut, and have a solid overseas fandom through Riot Games\' event group K/DA collaboration activities. In addition, they have become one of the most popular girl groups as their domestic fandom has grown significantly based on their presence, stage performance, and outstanding skills that are not like the youngest girl group shown in Queendom.</string>
+    <string name="post_textextend">more</string>
+
 </resources>
