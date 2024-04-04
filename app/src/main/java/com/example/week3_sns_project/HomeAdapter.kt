@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 // RecyclerView.Adapter<HomeAdapter.HomeViewHolder> 상속받음
-class HomeAdapter(private val itemList: List<DataModel>) : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>(){
+class HomeAdapter(private val itemList: ArrayList<DataModel>) : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>(){
 
     // 클릭 이벤트 추가부분
     var onItemClick : ((DataModel) -> Unit)? = null
