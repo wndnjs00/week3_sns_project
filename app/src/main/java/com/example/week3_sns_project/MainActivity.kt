@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var emailData : String
     lateinit var nameData : String
-    lateinit var intentToMyPage : Intent
     lateinit var intentToLogin : Intent
     lateinit var profileBtn : ImageButton
     lateinit var profileTextview : TextView
@@ -25,8 +24,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        emailData = intent.getStringExtra("email") ?: "-1"
-        nameData = intent.getStringExtra("name") ?: "아무개"
+        emailData = intent.getStringExtra("email") ?: "비회원"
+        nameData = intent.getStringExtra("name") ?: "비회원"
 
         setContentView(R.layout.activity_main)
         profileBtn = findViewById(R.id.main_profile_imagebutton)
@@ -40,8 +39,6 @@ class MainActivity : AppCompatActivity() {
 
         BottomNavigation()
 
-        emailData = intent.getStringExtra("email") ?: "-1"
-        nameData = intent.getStringExtra("name") ?: "-1"
 
         loginDataModel = LoginDataModel(emailData,nameData)
     }
