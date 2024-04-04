@@ -57,8 +57,22 @@ class HomeFragment : Fragment() {
         // GridLayoutManager사용해 리사이클러뷰 아이템 한줄에 1개씩 배치
         binding.homeRecyclerview.layoutManager = GridLayoutManager(context,1)
 
+        binding.homeBackground1Imageview.setOnClickListener {
+            val intent = Intent(context, BtsActivity::class.java)
+            startActivity(intent)
+        }
+        binding.homeBackground2Imageview.setOnClickListener {
+            val intent = Intent(context, BtobActivity::class.java)
+            startActivity(intent)
+        }
+        binding.homeBackground3Imageview.setOnClickListener {
+            val intent = Intent(context, IdleActivity::class.java)
+            startActivity(intent)
+        }
+
         return binding.root
     }
+
 
 
     fun HomeList(resources: Resources) : ArrayList<DataModel>{
