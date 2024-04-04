@@ -19,7 +19,9 @@
 
     <string name="home">홈</string>
     <string name="mypage">마이페이지</string>
-    <string name="intro">안녕하세요! 9조님</string>
+    <string name="intro">안녕하세요&#160;</string>
+    <string name="nim">님!</string>
+    <string name="unknown">비회원</string>
 
     <!-- mypage 페이지 string -->
     <string name="id">아이디 :</string>
@@ -49,6 +51,11 @@
     <!-- signin/out 페이지 string -->
     <string name="main_login_btn">로그인</string>
     <string name="main_signup_btn">회원가입</string>
+
+    <string name="empty_info">입력하지 않은 정보가 존재합니다.</string>
+    <string name="request_info">정보를 전부 입력해 주세요.</string>
+    <string name="password_check">비밀번호가 서로 다릅니다!</string>
+    <string name="notice_missinfo">유효하지 않은 정보입니다!</string>
 
     <string name="login_title_tv">로그인</string>
     <string name="login_email_tv">이메일</string>
