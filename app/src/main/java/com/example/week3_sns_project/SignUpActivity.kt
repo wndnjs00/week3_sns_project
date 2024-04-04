@@ -39,10 +39,10 @@ class SignUpActivity : AppCompatActivity() {
         signupSignupButton.setOnClickListener {
             if (signupEmailEdittext.length() == 0 || signupPasswordEdittext.length() == 0 || signupCheckpasswordEdittext.length() == 0 || signupNameEdittext.length() == 0) {
                 // 정보를 다 입력하지 않은 경우
-                Toast.makeText(this, "정보를 아직 다 입력하지 않았습니다", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.request_info), Toast.LENGTH_SHORT).show()
             } else if (signupPasswordEdittext.text.toString() != signupCheckpasswordEdittext.text.toString()) {
                 // '비밀번호'와 '비밀번호 확인' 데이터가 다른 경우
-                Toast.makeText(this, "비밀번호가 서로 다릅니다!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.password_check), Toast.LENGTH_SHORT).show()
             } else {
                 // registerForActivityResult 을 사용할 수 있을까? 하다가 일단 intent 로 받아옴
                 intent = Intent(this, FirstActivity::class.java) // 넘기는 쪽이 FirstActivity 일 수는 없나?(팀원 리뷰 요청)

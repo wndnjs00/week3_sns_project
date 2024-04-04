@@ -36,6 +36,8 @@
     <string name="main_login_btn">Log in</string>
     <string name="main_signup_btn">Sign in</string>
 
+    <string name="empty_info">Please enter all the information.</string>
+    <string name="request_info">Please enter all the information.</string>
     <string name="login_title_tv">Log in</string>
     <string name="login_email_tv">e-mail</string>
     <string name="login_email_hint">please enter your e-mail</string>
@@ -56,11 +58,15 @@
     <string name="signup_name_hint">please enter your name</string>
     <string name="signup_signup_btn">Sign in</string>
     <string name="mypage">My Page</string>
-    <string name="intro">Hello! 9 member</string>
+    <string name="intro">Hello!&#160;</string>
     <string name="idle_title">(G)I-DLE</string>
     <string name="idle_info1">Agency : Cube Entertainment</string>
     <string name="idle_info2">Date of debut : 2018 / 5 / 2</string>
     <string name="idle_info3">IDLE and (G)I-DLE are a girl group consisting of a total of five members, including Mi-yeon, Min-ni, Soyeon, Yuqi, and Shuhua. They have been popular with a rare concept since their debut, winning first place in music broadcasting, top music charts, and seven rookie awards in 20 days after their debut, and have a solid overseas fandom through Riot Games\' event group K/DA collaboration activities. In addition, they have become one of the most popular girl groups as their domestic fandom has grown significantly based on their presence, stage performance, and outstanding skills that are not like the youngest girl group shown in Queendom.</string>
     <string name="post_textextend">more</string>
+    <string name="nim">!</string>
+    <string name="unknown">unknown</string>
+    <string name="password_check">The password depends on each other!</string>
+    <string name="notice_missinfo">Invalid information!</string>
 
 </resources>

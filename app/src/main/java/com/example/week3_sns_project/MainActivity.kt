@@ -24,13 +24,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        emailData = intent.getStringExtra("email") ?: "비회원"
-        nameData = intent.getStringExtra("name") ?: "비회원"
+        emailData = intent.getStringExtra("email") ?: getString(R.string.unknown)
+        nameData = intent.getStringExtra("name") ?: getString(R.string.unknown)
 
         setContentView(R.layout.activity_main)
         profileBtn = findViewById(R.id.main_profile_imagebutton)
         profileTextview = findViewById(R.id.main_profile_textview)
-        profileTextview.setText("안녕하세요 ${nameData}님!")
+        profileTextview.text = getString(R.string.intro) + nameData + getString(R.string.nim)
 
         profileBtn.setOnClickListener {
             intentToLogin = Intent(this,FirstActivity::class.java)

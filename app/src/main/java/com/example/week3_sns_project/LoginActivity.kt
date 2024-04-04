@@ -53,7 +53,7 @@ class LoginActivity : AppCompatActivity() {
 
         loginButton.setOnClickListener {
             if (loginEmailEdittext.length() == 0 || loginPasswordEdittext.length() == 0 || loginNameEdittext.length() == 0) {
-                Toast.makeText(this, "입력하지 않은 정보가 존재합니다!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.empty_info), Toast.LENGTH_SHORT).show()
             } else if (emailList.contains(loginEmailEdittext.text.toString()) && passwordList.contains(
                     loginPasswordEdittext.text.toString()
                 ) && nameList.contains(loginNameEdittext.text.toString())
@@ -73,7 +73,7 @@ class LoginActivity : AppCompatActivity() {
                 */
             } else {
                 // 회원가입 정보에서 받은 데이터가 아닌 경우
-                Toast.makeText(this, "유효하지 않은 정보입니다!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.notice_missinfo), Toast.LENGTH_SHORT).show()
             }
 
         }
