@@ -5,10 +5,11 @@ import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
-class DetailActivity : AppCompatActivity() {
+class DetailActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,7 +25,6 @@ class DetailActivity : AppCompatActivity() {
         val post_title_tv = findViewById<TextView>(R.id.detail_title_textview)
         val post_content_tv = findViewById<TextView>(R.id.detail_post_textview)
         val idol_image = findViewById<ImageView>(R.id.detail_img_imgview)
-
 
         empty_btn.setOnClickListener {
             if(heart_btn.visibility == View.VISIBLE) {
@@ -58,7 +58,55 @@ class DetailActivity : AppCompatActivity() {
         }
 
 
+        post_content_tv.setOnClickListener(this)
 
 
     }
+
+    override fun onClick(v: View?) {
+
+        var post_tv = findViewById<TextView>(R.id.detail_post_textview)
+        var postExtend_tv = findViewById<TextView>(R.id.detail_postextend_textview)
+
+        if(post_tv.lineCount > 2) {
+            post_tv.maxLines = 2
+            postExtend_tv.visibility = View.VISIBLE
+        }
+
+    }
+
+
+    override fun onResume() {
+        super.onResume()
+
+        var post_tv = findViewById<TextView>(R.id.detail_post_textview)
+        var postExtend_tv = findViewById<TextView>(R.id.detail_postextend_textview)
+
+        setViewMore(post_tv,postExtend_tv)
+
+
+
+    }
+
+
+   private fun setViewMore(contentTextView: TextView, viewMoreTextView: TextView) {
+        contentTextView.post {
+            val lineCount = contentTextView.layout.lineCount
+                // ...이 있으면 더보기 버튼 활성화
+                if (contentTextView.layout.getEllipsisCount(lineCount - 1) > 0) {
+                    viewMoreTextView.visibility = View.VISIBLE
+
+                    // 더보기 클릭시 버튼 사라지게, 최대 6줄까지 늘어남
+                    viewMoreTextView.setOnClickListener {
+                        contentTextView.maxLines = 6
+                        viewMoreTextView.visibility = View.GONE
+                    }
+
+            }
+        }
+
+
+    }
+
+
 }
