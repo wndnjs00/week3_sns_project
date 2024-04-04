@@ -91,7 +91,7 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
 
    private fun setViewMore(contentTextView: TextView, viewMoreTextView: TextView) {
         contentTextView.post {
-            val lineCount :Int = contentTextView.layout.lineCount
+            val lineCount  = contentTextView.layout.lineCount
                 // ...이 있으면 더보기 버튼 활성화
                 if (contentTextView.layout.getEllipsisCount(lineCount - 1) > 0) {
                     viewMoreTextView.visibility = View.VISIBLE
