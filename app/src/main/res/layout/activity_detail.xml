@@ -32,32 +32,36 @@
         tools:ignore="TouchTargetSizeCheck" />
 
 
-
     <TextView
         android:id="@+id/detail_title_textview"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="240dp"
+        android:minHeight="25dp"
         android:text="@string/title_name"
         android:textSize="20sp"
-        android:minHeight="25dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detail_back_imgbtn" />
 
+    <!-- 더보기 버튼 구현으로 minHeight 삭제-->
     <TextView
         android:id="@+id/detail_post_textview"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="300dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="24dp"
+        android:layout_marginRight="30dp"
+        android:ellipsize="end"
+        android:maxLines="2"
         android:text="@string/post_text"
         android:textColor="@color/black"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detail_title_textview" />
+
 
     <ImageButton
         android:id="@+id/detail_empty_imgbtn"
@@ -82,5 +86,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/detail_img_imgview"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_detail_heart" />
+
+    <TextView
+        android:id="@+id/detail_postextend_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/post_textextend"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/detail_post_textview"
+        app:layout_constraintTop_toBottomOf="@+id/detail_post_textview" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
