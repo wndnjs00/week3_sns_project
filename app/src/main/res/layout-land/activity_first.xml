@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,11 +9,12 @@
     android:background="#d3d3d3"
     tools:context=".LoginActivity">
 
+
     <ImageView
         android:id="@+id/main_image_imageview"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="70dp"
+        android:layout_margin="50dp"
         android:src="@drawable/iv_login_loginimageview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.3"
@@ -24,7 +26,7 @@
     <Button
         android:id="@+id/main_login_button"
         android:layout_width="0dp"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:minHeight="19dp"
         android:backgroundTint="#00C2FF"
         android:text="@string/main_login_btn"
@@ -41,7 +43,7 @@
     <Button
         android:id="@+id/main_signup_button"
         android:layout_width="0dp"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:minHeight="19dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/white"
