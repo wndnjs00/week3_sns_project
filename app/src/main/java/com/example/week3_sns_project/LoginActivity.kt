@@ -66,6 +66,7 @@ class LoginActivity : AppCompatActivity() {
                 intent.putExtra("email", loginEmailEdittext.text.toString())
                 intent.putExtra("name", loginNameEdittext.text.toString())
                 startActivity(intent)
+                overridePendingTransition(R.anim.from_left_enter, R.anim.to_left_exit)
                 /*
                 잘 모르겠는 부분: 데이터를 일단은 필요한 액티비티한테만 넘겨주고 싶은데,
                 화면 전환시에는 또 다른 액티비티(데이터가 필요없는 액티비티) 가 필요한 경우

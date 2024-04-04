@@ -42,40 +42,86 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
+                    android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:minHeight="25dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="100dp"
+                    android:minHeight="25dp"
                     android:text="@string/id"
                     android:textSize="20sp"
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     app:layout_constraintLeft_toLeftOf="@+id/gray_constraintlayout"
                     app:layout_constraintTop_toTopOf="@+id/gray_constraintlayout" />
 
                 <TextView
+                    android:id="@+id/mypage_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minHeight="25dp"
+                    android:text="@string/id_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="@+id/textView" />
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="150dp"
+                    android:minHeight="25dp"
                     android:text="@string/name"
                     android:textSize="20sp"
+                    android:textColor="@color/black"
                     android:textStyle="bold"
                     app:layout_constraintLeft_toLeftOf="@+id/gray_constraintlayout"
                     app:layout_constraintTop_toTopOf="@+id/gray_constraintlayout" />
 
                 <TextView
+                    android:id="@+id/mypage_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minHeight="25dp"
+                    android:text="@string/name_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="200dp"
+                    android:minHeight="25dp"
                     android:text="@string/artist"
                     android:textSize="20sp"
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     app:layout_constraintLeft_toLeftOf="@+id/gray_constraintlayout"
                     app:layout_constraintTop_toTopOf="@+id/gray_constraintlayout" />
+
+                <TextView
+                    android:id="@+id/mypage_artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="25dp"
+                    android:text="@string/btob"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                    app:layout_constraintStart_toEndOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="@+id/textView3" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

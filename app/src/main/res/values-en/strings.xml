@@ -46,4 +46,9 @@
     <string name="signup_name_hint">please enter your name</string>
     <string name="signup_signup_btn">Sign in</string>
     <string name="mypage">My Page</string>
+
+    <string name="id_content">My id</string>
+    <string name="name_content">My name</string>
+    <string name="artist_content">My artist</string>
+
 </resources>

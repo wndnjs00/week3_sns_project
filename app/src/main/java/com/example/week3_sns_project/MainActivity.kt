@@ -1,6 +1,5 @@
 package com.example.week3_sns_project
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -11,7 +10,10 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var emailData : String
     lateinit var nameData : String
-    lateinit var intentToMyPage : Intent
+
+    companion object{
+        lateinit var loginDataModel : LoginDataModel
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +24,8 @@ class MainActivity : AppCompatActivity() {
 
         emailData = intent.getStringExtra("email") ?: "-1"
         nameData = intent.getStringExtra("name") ?: "-1"
-//        intentToMyPage = Intent(this, MypageFragment::class.java)
+
+        loginDataModel = LoginDataModel(emailData,nameData)
     }
 
 
@@ -67,5 +70,6 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
 
 }
