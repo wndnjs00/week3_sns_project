@@ -26,6 +26,24 @@
     <string name="name">이름 :</string>
     <string name="artist">내 아티스트 :</string>
 
+    <!-- BTS 페이지 string -->
+    <string name="bts_title">BTS</string>
+    <string name="bts_info1">소속사 : 빅히트 뮤직</string>
+    <string name="bts_info2">데뷔일 : 2013년 6월 13일</string>
+    <string name="bts_info3">BTS, 방탄소년단은 진, 슈가, 제이홉, RM, 지민, 뷔, 정국을 멤버로 총 일곱 명으로 구성된 보이그룹이다. 방탄소년단(防彈少年團)이란 이름에서 방탄은 \'총알을 막아낸다\'라는 뜻이 있다. 10대들이 살아가면서 겪는 힘든 일, 편견과 억압을 우리가 막아내겠다는 심오한 뜻을 담아냈다고 밝혔다. 방탄소년단이란 팀명 자체는 2010년에 이미 빅히트에서 내정됐었다</string>
+
+    <!-- BTOB 페이지 string -->
+    <string name="btob_title">BTOB</string>
+    <string name="btob_info1">소속사 : 비투비컴퍼니</string>
+    <string name="btob_info2">데뷔일 : 2012년 3월 21일</string>
+    <string name="btob_info3">BTOB는 서은광, 이민혁, 이창섭, 임현식, 프니엘, 육성재를 멤버로 총 여섯 명으로 구성된 보이그룹이다. 개그, 예능감, 드립력으로 이미지를 안드로메다로 보내는 그룹으로 개그 욕심이 상당해 누가누가 드립을 더 잘 치고, 더 웃길 수 있는지 경쟁하는 그룹으로 유명하다. 발라드돌, 보컬부자라는 수식어가 붙어 있는데 실제로도 비투비의 보컬라인은 보컬을 전공한 멤버들로 구성된만큼 보컬라인 간의 밸런스가 잘 잡혀있고 고음을 비롯해 기본기가 탄탄한 것이 특징이다.</string>
+
+    <!-- IDLE 페이지 string -->
+    <string name="idle_title">(G)I-DLE</string>
+    <string name="idle_info1">소속사 : 큐브엔터테이먼트</string>
+    <string name="idle_info2">데뷔일 : 2018년 5월 2일</string>
+    <string name="idle_info3">IDLE, 여자아이들은 미연, 민니, 소연, 우기, 슈화를 멤버로 총 다섯 명으로 구성된 걸그룹이다. 데뷔 초부터 흔치 않은 컨셉으로 인기몰이를 하며 데뷔 후 활동 20일 만에 음악 방송 1위, 음원 차트 상위권, 신인상 7관왕을 차지할 만큼 괴물 신인이었고, 라이엇게임즈의 이벤트성 그룹 K/DA 콜라보 활동 등을 통해 탄탄한 해외 팬덤을 가지고 있다. 또한 퀸덤에서 보여준 막내 걸그룹답지 않은 존재감과 무대 퍼포먼스, 뛰어난 실력을 기점으로 국내 팬덤 규모 또한 크게 성장하게 되면서 대세 걸그룹 중 한 팀으로 자리잡았다.</string>
+
     <!-- signin/out 페이지 string -->
     <string name="main_login_btn">로그인</string>
     <string name="main_signup_btn">회원가입</string>
