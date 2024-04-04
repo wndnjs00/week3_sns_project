@@ -2,6 +2,8 @@ package com.example.week3_sns_project
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -12,16 +14,27 @@ class MainActivity : AppCompatActivity() {
     lateinit var emailData : String
     lateinit var nameData : String
     lateinit var intentToMyPage : Intent
+    lateinit var intentToLogin : Intent
+    lateinit var profileBtn : ImageButton
+    lateinit var profileTextview : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        emailData = intent.getStringExtra("email") ?: "-1"
+        nameData = intent.getStringExtra("name") ?: "아무개"
+
         setContentView(R.layout.activity_main)
+        profileBtn = findViewById(R.id.main_profile_imagebutton)
+        profileTextview = findViewById(R.id.main_profile_textview)
+        profileTextview.setText("안녕하세요 ${nameData}님!")
+
+        profileBtn.setOnClickListener {
+            intentToLogin = Intent(this,FirstActivity::class.java)
+            startActivity(intentToLogin)
+        }
 
         BottomNavigation()
-
-        emailData = intent.getStringExtra("email") ?: "-1"
-        nameData = intent.getStringExtra("name") ?: "-1"
 //        intentToMyPage = Intent(this, MypageFragment::class.java)
     }
 
