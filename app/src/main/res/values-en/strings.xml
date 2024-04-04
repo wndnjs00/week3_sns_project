@@ -13,7 +13,7 @@
     <string name="time_tv">15 hours ago</string>
     <string name="title_content_tv">I\'m at the Yongsan branch of BTS cafe</string>
     <string name="title_content_tv2">I went to BTOB\'s concert!!</string>
-    <string name="post_tv1">Post Title</string>
+    <string name="post_tv1">Post 1 content, Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,Post 1 content,</string>
     <string name="post_tv2">Contents of the Post</string>
 
     <!-- mypage 페이지 string -->
@@ -46,4 +46,5 @@
     <string name="signup_name_hint">please enter your name</string>
     <string name="signup_signup_btn">Sign in</string>
     <string name="mypage">My Page</string>
+    <string name="post_textextend">more</string>
 </resources>
