@@ -42,6 +42,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
+                    android:id="@+id/mypage_id_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minHeight="25dp"
@@ -55,6 +56,21 @@
                     app:layout_constraintTop_toTopOf="@+id/gray_constraintlayout" />
 
                 <TextView
+                    android:id="@+id/mypage_id_textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="25dp"
+                    android:text="@string/id_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mypage_id_textview"
+                    app:layout_constraintStart_toEndOf="@+id/mypage_id_textview"
+                    app:layout_constraintTop_toTopOf="@+id/mypage_id_textview" />
+
+
+                <TextView
+                    android:id="@+id/mypage_name_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minHeight="25dp"
@@ -68,6 +84,20 @@
                     app:layout_constraintTop_toTopOf="@+id/gray_constraintlayout" />
 
                 <TextView
+                    android:id="@+id/mypage_name_textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="25dp"
+                    android:text="@string/name_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mypage_name_textview"
+                    app:layout_constraintStart_toEndOf="@+id/mypage_name_textview"
+                    app:layout_constraintTop_toTopOf="@+id/mypage_name_textview" />
+
+                <TextView
+                    android:id="@+id/mypage_artist_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minHeight="25dp"
@@ -79,6 +109,19 @@
                     android:textColor="@color/black"
                     app:layout_constraintLeft_toLeftOf="@+id/gray_constraintlayout"
                     app:layout_constraintTop_toTopOf="@+id/gray_constraintlayout" />
+
+                <TextView
+                    android:id="@+id/mypage_artist_textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="25dp"
+                    android:text="@string/btob"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mypage_artist_textview"
+                    app:layout_constraintStart_toEndOf="@+id/mypage_artist_textview"
+                    app:layout_constraintTop_toTopOf="@+id/mypage_artist_textview" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

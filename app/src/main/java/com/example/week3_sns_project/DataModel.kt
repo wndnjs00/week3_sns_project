@@ -11,3 +11,8 @@ data class DataModel (
     val profile_image : Int   // 프로필 이미지
 
 )
+
+data class LoginDataModel(
+    val id : String,
+    val name : String
+)

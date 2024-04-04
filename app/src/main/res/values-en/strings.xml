@@ -21,6 +21,8 @@
     <string name="id">ID :</string>
     <string name="name">NAME :</string>
     <string name="artist">MY ARTIST :</string>
+    <string name="id_content">MY Id</string>
+    <string name="name_content">My Name</string>
 
     <!-- signin/out 페이지 string -->
     <string name="bts_title">BTS</string>

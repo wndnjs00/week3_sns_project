@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
     lateinit var profileBtn : ImageButton
     lateinit var profileTextview : TextView
 
+    companion object{
+        lateinit var loginDataModel : LoginDataModel
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -35,7 +39,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         BottomNavigation()
-//        intentToMyPage = Intent(this, MypageFragment::class.java)
+
+        emailData = intent.getStringExtra("email") ?: "-1"
+        nameData = intent.getStringExtra("name") ?: "-1"
+
+        loginDataModel = LoginDataModel(emailData,nameData)
     }
 
 
@@ -70,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.main_framelayout, MypageFragment()) // fragment 를 쓸 때는 frameLayout을 꼭 써야하는가?
                         .commitAllowingStateLoss()
-                    // intent 못넘김 .. 데이터 어떻게 넘길지 모르겠음 (추가공부 필요)
+
                     return@setOnItemSelectedListener true
                 }
 
