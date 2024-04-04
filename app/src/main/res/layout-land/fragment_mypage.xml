@@ -50,7 +50,6 @@
                     android:text="@string/id"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
                     app:layout_constraintLeft_toLeftOf="@+id/gray_constraintlayout"
                     app:layout_constraintTop_toTopOf="@+id/gray_constraintlayout" />
 
@@ -63,7 +62,6 @@
                     android:text="@string/name"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
                     app:layout_constraintLeft_toLeftOf="@+id/gray_constraintlayout"
                     app:layout_constraintTop_toTopOf="@+id/gray_constraintlayout" />
 
@@ -76,7 +74,6 @@
                     android:text="@string/artist"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
                     app:layout_constraintLeft_toLeftOf="@+id/gray_constraintlayout"
                     app:layout_constraintTop_toTopOf="@+id/gray_constraintlayout" />
 

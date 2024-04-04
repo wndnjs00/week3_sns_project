@@ -23,6 +23,14 @@
     <string name="artist">MY ARTIST :</string>
 
     <!-- signin/out 페이지 string -->
+    <string name="bts_title">BTS</string>
+    <string name="bts_info1">Agency : Big-Hit Music</string>
+    <string name="bts_info2">Date of debut : 2013 / 6 / 13</string>
+    <string name="bts_info3">BTS and BTS are a boy group with a total of seven members, consisting of Jin, Suga, J-Hope, RM, Jimin, V, and Jungkook. In the name of BTS, Bangtan means \"to prevent bullets.\" He said that he expressed the profound intention of preventing prejudice and oppression that teenagers face in their lives. The team name BTS itself was already nominated by Big Hit in 2010</string>
+    <string name="btob_title">BTOB</string>
+    <string name="btob_info1">Agency : BTOB-company</string>
+    <string name="btob_info2">Date of debut : 2012 / 3 / 21</string>
+    <string name="btob_info3">BTOB is a boy group consisting of a total of six members, including Seo Eun-kwang, Lee Min-hyuk, Lee Chang-seop, Lim Hyun-sik, Peniel, and Yook Sung-jae. It is a group that sends its image to Andromeda with its humor, entertainment, and drip skills, and is famous for competing for who can make jokes better and who can make them laugh. Ballad-dol and vocal rich are attached, and in fact, BTOB\'s vocal line is characterized by a good balance between vocal lines and solid basic skills, including high notes, as it is composed of members who majored in vocals.</string>
     <string name="main_login_btn">Log in</string>
     <string name="main_signup_btn">Sign in</string>
 
@@ -46,4 +54,8 @@
     <string name="signup_name_hint">please enter your name</string>
     <string name="signup_signup_btn">Sign in</string>
     <string name="mypage">My Page</string>
+    <string name="idle_title">(G)I-DLE</string>
+    <string name="idle_info1">Agency : Cube Entertainment</string>
+    <string name="idle_info2">Date of debut : 2018 / 5 / 2</string>
+    <string name="idle_info3">IDLE and (G)I-DLE are a girl group consisting of a total of five members, including Mi-yeon, Min-ni, Soyeon, Yuqi, and Shuhua. They have been popular with a rare concept since their debut, winning first place in music broadcasting, top music charts, and seven rookie awards in 20 days after their debut, and have a solid overseas fandom through Riot Games\' event group K/DA collaboration activities. In addition, they have become one of the most popular girl groups as their domestic fandom has grown significantly based on their presence, stage performance, and outstanding skills that are not like the youngest girl group shown in Queendom.</string>
 </resources>
