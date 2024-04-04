@@ -19,6 +19,7 @@
 
     <string name="home">홈</string>
     <string name="mypage">마이페이지</string>
+    <string name="intro">안녕하세요! 9조님</string>
 
     <!-- mypage 페이지 string -->
     <string name="id">아이디 :</string>

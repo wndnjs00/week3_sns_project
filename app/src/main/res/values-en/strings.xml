@@ -54,7 +54,7 @@
     <string name="signup_name_hint">please enter your name</string>
     <string name="signup_signup_btn">Sign in</string>
     <string name="mypage">My Page</string>
-
+    <string name="intro">Hello! 9 member</string>
     <string name="idle_title">(G)I-DLE</string>
     <string name="idle_info1">Agency : Cube Entertainment</string>
     <string name="idle_info2">Date of debut : 2018 / 5 / 2</string>
