@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#ffffff</color>
+    <color name="white">#000000</color>
+    <color name="charcoal">#e5dbde</color>
+    <color name="gainsboro">#232323</color>
+    <color name="purple">#71AB19</color>
+    <color name="lightgray">#262626</color>
+    <color name="deepskyblue">#FF3D00</color>
+    <color name="dimgray">#969696</color>
+    <color name="whisper">#222222</color>
+    <color name="transparent">#00000000</color>
+</resources>
