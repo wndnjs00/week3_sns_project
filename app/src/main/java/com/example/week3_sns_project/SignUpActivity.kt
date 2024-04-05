@@ -1,7 +1,11 @@
 package com.example.week3_sns_project
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
@@ -9,6 +13,7 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.week3_sns_project.R
+import java.util.regex.Pattern
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -32,6 +37,49 @@ class SignUpActivity : AppCompatActivity() {
         signupCheckpasswordEdittext = findViewById(R.id.signup_checkpassword_edittext)
         signupNameEdittext = findViewById(R.id.signup_name_edittext)
 
+//        signupEmailEdittext.addTextChangedListener(object: TextWatcher {
+//            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+//            }
+//
+//            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+//                // 텍스트가 변경될 때마다 호출된다.
+//                // 이메일을 입력할 때 실시간으로 이메일 형식을 검사한다.
+//                isRegularEmail()
+//            }
+//
+//            override fun afterTextChanged(s: Editable?) {
+//            }
+//        })
+
+        signupPasswordEdittext.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                // 텍스트가 변경될 때마다 호출된다.
+                // 비밀번호를 입력할 때 실시간으로 비밀번호 형식을 검사한다.
+                isRegularPwd(signupPasswordEdittext)
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+            }
+        })
+
+        signupCheckpasswordEdittext.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                // 텍스트가 변경될 때마다 호출된다.
+                // 비밀번호를 입력할 때 실시간으로 비밀번호 형식을 검사한다.
+                isRegularPwd(signupCheckpasswordEdittext)
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+            }
+        })
+
+
         signupBackButton.setOnClickListener {
             finish()
         }
@@ -51,6 +99,30 @@ class SignUpActivity : AppCompatActivity() {
                 intent.putExtra("name",signupNameEdittext.text.toString())
                 startActivity(intent)
             }
+        }
+    }
+
+//    private fun isRegularEmail():Boolean {
+//        val email = signupEmailEdittext.text.toString().trim()
+//        val pattern = android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
+//        if(pattern) {
+//            // 유효성 검사 결과 이메일 형식일 경우
+//            // 일단 예진님이 완성해서 보류
+//        }
+//    }
+
+    private fun isRegularPwd(editText: EditText):Boolean {
+        val pwd = editText.text.toString().trim()
+        val pwdPattern = "^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[$@$!%*#?&.])[A-Za-z[0-9]$@$!%*#?&.]{8,16}$"
+        val pattern = Pattern.matches(pwdPattern,pwd)
+        if(pattern) {
+            //유효성 검사 결과 정해진 비밀번호 형식일 경우
+            editText.setTextColor(getColor(R.color.black))
+            return true
+        } else {
+            // 유효성 검사 결과 비밀번호 형식이 아니면 EditText 테두리를 빨간색으로 처리한다.
+            editText.setTextColor(getColor(R.color.red))
+            return false
         }
     }
 }
