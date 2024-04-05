@@ -29,7 +29,7 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge() // 이게 무슨 말이지? (팀원설명요청)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_login)
 
         val loginBackButton: ImageButton = findViewById(R.id.login_back_button)
@@ -75,19 +75,12 @@ class LoginActivity : AppCompatActivity() {
                     loginPasswordEdittext.text.toString()
                 ) && nameList.contains(loginNameEdittext.text.toString())
             ) {
-                /*
-                - 회원가입 정보에 들어있는 데이터인 경우
-                - 순서까지 매치하는 코드 짜기에는 아직 힘들 것 같아서 임시로 contain만 사용함
-                */
+
                 val intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("email", loginEmailEdittext.text.toString())
                 intent.putExtra("name", loginNameEdittext.text.toString())
                 startActivity(intent)
-                /*
-                잘 모르겠는 부분: 데이터를 일단은 필요한 액티비티한테만 넘겨주고 싶은데,
-                화면 전환시에는 또 다른 액티비티(데이터가 필요없는 액티비티) 가 필요한 경우
-                이렇게 일일히 액티비티마다 데이터를 넘겨줘야 하나?
-                */
+
             } else {
                 // 회원가입 정보에서 받은 데이터가 아닌 경우
                 Toast.makeText(this, getString(R.string.notice_missinfo), Toast.LENGTH_SHORT).show()
@@ -95,7 +88,6 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
-        // 코드 설명 리뷰 요청.
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
