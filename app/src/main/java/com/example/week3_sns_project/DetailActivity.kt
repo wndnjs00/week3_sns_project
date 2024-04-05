@@ -1,5 +1,6 @@
 package com.example.week3_sns_project
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
@@ -89,6 +90,7 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
+   @SuppressLint("SuspiciousIndentation")
    private fun setViewMore(contentTextView: TextView, viewMoreTextView: TextView) {
         contentTextView.post {
             val lineCount  = contentTextView.layout.lineCount
