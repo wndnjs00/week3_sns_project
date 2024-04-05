@@ -36,15 +36,17 @@ class MypageFragment : Fragment() {
 
     // spinner의 값을 결정하는 함수
     fun spinnerIdol(){
-
+        // itemList불러오기
         val idol = resources.getStringArray(R.array.itemList)
-
+        // item_spinner를 어뎁터에 적용
         val Adapter = context?.let { ArrayAdapter(it, R.layout.item_spinner, idol) }
 
+        // mypageSpinner와 어뎁터 연결
         binding.mypageSpinner?.adapter = Adapter
     }
 
 
+    // 선택시 결과를 출력해주는 함수
     fun spinnerIdolResult(){
 
         binding.mypageSpinner?.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
@@ -54,11 +56,11 @@ class MypageFragment : Fragment() {
                 position: Int,
                 id: Long
             ) {
+                // mypageArtistTextview2에 mypageSpinner에서 선택한값이 적용되도록
                 binding.mypageArtistTextview2.text = "${binding.mypageSpinner?.getItemAtPosition(position)}"
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
             }
         }
     }
