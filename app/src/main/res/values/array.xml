@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="itemList">
+        <item>@string/no</item>
+        <item>@string/bts</item>
+        <item>@string/btob</item>
+        <item>@string/idle</item>
+    </string-array>
+
+</resources>

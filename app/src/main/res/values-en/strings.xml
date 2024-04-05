@@ -68,5 +68,6 @@
     <string name="unknown">unknown</string>
     <string name="password_check">The password depends on each other!</string>
     <string name="notice_missinfo">Invalid information!</string>
+    <string name="no">Not selected</string>
 
 </resources>

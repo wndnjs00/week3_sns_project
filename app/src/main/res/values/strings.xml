@@ -22,6 +22,8 @@
     <string name="intro">안녕하세요&#160;</string>
     <string name="nim">님!</string>
     <string name="unknown">비회원</string>
+    <string name="no">선택 안함</string>
+
 
     <!-- mypage 페이지 string -->
     <string name="id">아이디 :</string>
