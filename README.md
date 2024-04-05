@@ -20,6 +20,24 @@
 
 <br>
 
+# ⚙️서비스 전체 기능
+- ViewBinding
+- Fragment
+- RecyclerView
+- Adapter
+- ViewHolder
+- TextWatcher
+- Regex Pattern
+- Animation
+- 영어 모드 지원
+- 동그란 ImageView
+- scroll 기능
+- 더보기 기능
+- Font 글씨 크기 조절 기능
+- 다크모드
+- 세로/가로 모드 
+<br>
+
 # 📄 페이지 UI / 기능 소개
 
 - **앱 실행 시 첫 화면 (HomeFragment)**
