@@ -38,19 +38,6 @@ class SignUpActivity : AppCompatActivity() {
         signupCheckpasswordEdittext = findViewById(R.id.signup_checkpassword_edittext)
         signupNameEdittext = findViewById(R.id.signup_name_edittext)
 
-//        signupEmailEdittext.addTextChangedListener(object: TextWatcher {
-//            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-//            }
-//
-//            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-//                // 텍스트가 변경될 때마다 호출된다.
-//                // 이메일을 입력할 때 실시간으로 이메일 형식을 검사한다.
-//                isRegularEmail()
-//            }
-//
-//            override fun afterTextChanged(s: Editable?) {
-//            }
-//        })
 
         signupPasswordEdittext.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
@@ -121,9 +108,8 @@ class SignUpActivity : AppCompatActivity() {
                 // '비밀번호'와 '비밀번호 확인' 데이터가 다른 경우
                 Toast.makeText(this, getString(R.string.password_check), Toast.LENGTH_SHORT).show()
             } else {
-                // registerForActivityResult 을 사용할 수 있을까? 하다가 일단 intent 로 받아옴
-                intent = Intent(this, FirstActivity::class.java) // 넘기는 쪽이 FirstActivity 일 수는 없나?(팀원 리뷰 요청)
-                intent.putExtra("email",signupEmailEdittext.text.toString()) // 근데 text.toString() 말고 toString() 만 쓰는거랑 무슨 차이지?(팀원 리뷰 요청)
+                intent = Intent(this, FirstActivity::class.java)
+                intent.putExtra("email",signupEmailEdittext.text.toString())
                 intent.putExtra("password",signupPasswordEdittext.text.toString())
                 intent.putExtra("name",signupNameEdittext.text.toString())
                 startActivity(intent)
@@ -131,14 +117,6 @@ class SignUpActivity : AppCompatActivity() {
         }
     }
 
-//    private fun isRegularEmail():Boolean {
-//        val email = signupEmailEdittext.text.toString().trim()
-//        val pattern = android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
-//        if(pattern) {
-//            // 유효성 검사 결과 이메일 형식일 경우
-//            // 일단 예진님이 완성해서 보류
-//        }
-//    }
 
     private fun isRegularPwd(editText: EditText):Boolean {
         val pwd = editText.text.toString().trim()

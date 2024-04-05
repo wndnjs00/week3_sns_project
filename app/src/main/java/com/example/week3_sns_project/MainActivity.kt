@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
                 // mypage클릭시 MypageFragment()로 대체
                 R.id.mypage -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_framelayout, MypageFragment()) // fragment 를 쓸 때는 frameLayout을 꼭 써야하는가?
+                        .replace(R.id.main_framelayout, MypageFragment())
                         .commitAllowingStateLoss()
 
                     return@setOnItemSelectedListener true

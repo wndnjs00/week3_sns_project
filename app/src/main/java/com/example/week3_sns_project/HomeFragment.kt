@@ -15,25 +15,12 @@ class HomeFragment : Fragment() {
     private lateinit var binding : FragmentHomeBinding      // 뷰바인딩 선언(초기화는 나중에)
 
 
-
-
-
-
-
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         // 뷰바인딩 초기화
         binding = FragmentHomeBinding.inflate(inflater, container, false)
-
-
-
-
-
-
 
 
         val itemList = HomeList(resources)
