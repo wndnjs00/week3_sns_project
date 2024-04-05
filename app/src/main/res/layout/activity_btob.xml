@@ -21,9 +21,8 @@
 
             <ImageView
                 android:id="@+id/btob_logo"
-                android:layout_width="140dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -33,23 +32,24 @@
                 android:id="@+id/idol_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="44dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="48dp"
                 android:minHeight="30dp"
                 android:text="@string/btob_title"
-                android:layout_marginLeft="15dp"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/btob_logo"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/idol_info1"
-                android:layout_width="0dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:autoSizeTextType="uniform"
                 android:text="@string/btob_info1"
                 android:textSize="17sp"
                 android:textStyle="bold"
@@ -59,10 +59,11 @@
 
             <TextView
                 android:id="@+id/idol_info2"
-                android:layout_width="0dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="@string/btob_info2"
+                android:autoSizeTextType="uniform"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 app:layout_constraintRight_toRightOf="parent"
