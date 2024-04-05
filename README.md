@@ -20,36 +20,37 @@
 
 <br>
 
-# 페이지 UI / 기능 소개
+# 📄 페이지 UI / 기능 소개
 
 - **앱 실행 시 첫 화면 (HomeFragment)**
 
     상단의 아이돌 프로필들은 가로로 스크롤이 가능하고 하단의 게시글들은 세로로 스크롤이 가능하다. 이 화면에서 프로필 모양을 클릭하       면 로그인, 회원가입 창(FirstActivity)으로 넘어간다.
-    
 
-
-![1](https://github.com/wndnjs00/week3_sns_project/assets/128487386/cbda25d6-2e77-4422-9253-1ca614550594)
-![2](https://github.com/wndnjs00/week3_sns_project/assets/128487386/7d78fc05-9abe-4090-91f5-11a64865476f)
-
+<p align="center">
+    <img src="https://github.com/wndnjs00/week3_sns_project/assets/128487386/cbda25d6-2e77-4422-9253-1ca614550594">
+    <img src="https://github.com/wndnjs00/week3_sns_project/assets/128487386/7d78fc05-9abe-4090-91f5-11a64865476f">
+</p>
 
 ---
 
-
 - **로그인 버튼과 회원가입 버튼을 클릭했을 경우 (LoginActivity, SignupActivity)**
 
-  로그인 버튼을 클릭하면 LoginActivity 로 넘어가게 되고, 회원가입 버튼을 클릭하면 SignupActivity 로 넘어가게 되며 회원가입을 할     때 이메일과 비밀번호의 실시간 유효성 검사 기능이 추가되어 있다.
+  로그인 버튼을 클릭하면 LoginActivity 로 넘어가게 되고, 회원가입 버튼을 클릭하면 SignupActivity 로 넘어가게 되며 회원가입을 할때 이메일과 비밀번호의 실시간 유효성 검사 기능이 추가되어 있다.
+<p align="center">
+    <img src="https://github.com/wndnjs00/week3_sns_project/assets/128487386/7a13b809-1dc2-4700-8a74-8a9678d0c5cd">
+    <img src="https://github.com/wndnjs00/week3_sns_project/assets/128487386/91682dc8-fdc9-433c-a12d-4a3c4cf3411d">
+</p>
 
-![3](https://github.com/wndnjs00/week3_sns_project/assets/128487386/7a13b809-1dc2-4700-8a74-8a9678d0c5cd)
-![4](https://github.com/wndnjs00/week3_sns_project/assets/128487386/91682dc8-fdc9-433c-a12d-4a3c4cf3411d)
 
 ---
 
 - **상단 프래그먼트 (아이돌 프로필) 클릭했을 경우 (Bts,Btob,Idle - Activity)**
 
-  상단 프래그먼트를 클릭하면 해당 아이돌에 대한 설명과 로고가 담긴 창으로 넘어가게 됩니다.
-
-![5](https://github.com/wndnjs00/week3_sns_project/assets/128487386/1428ad21-263f-4363-965c-3ee9885aa8cf)
-![6](https://github.com/wndnjs00/week3_sns_project/assets/128487386/bb1b323c-650f-40ac-8e62-cb74750e34e3)
+  상단 프래그먼트를 클릭하면 해당 아이돌에 대한 설명과 로고가 담긴 창으로 넘어가게 된다.
+<p align="center">
+    <img src="https://github.com/wndnjs00/week3_sns_project/assets/128487386/1428ad21-263f-4363-965c-3ee9885aa8cf">
+    <img src="https://github.com/wndnjs00/week3_sns_project/assets/128487386/bb1b323c-650f-40ac-8e62-cb74750e34e3">
+</p>
 
 ---
 
@@ -57,8 +58,11 @@
 
   홈 프래그먼트 창의 게시글 이미지, 글 제목, 글 내용이 DetailActivity 로 전달된 것을 확인할 수 있다. 글 내용의 길이가 두 줄 이상일 경우에 더보기(more) 를 클릭하면 내용을 마저 볼 수 있고 다시 접을 수도 있다. 
 
-![8](https://github.com/wndnjs00/week3_sns_project/assets/128487386/957cfb66-7ba4-45a9-9e9f-2275f24fd174)
-![9](https://github.com/wndnjs00/week3_sns_project/assets/128487386/3b97f0dd-0aa4-406f-a906-40847e16272a)
+<p align="center">
+    <img src="https://github.com/wndnjs00/week3_sns_project/assets/128487386/957cfb66-7ba4-45a9-9e9f-2275f24fd174">
+    <img src="https://github.com/wndnjs00/week3_sns_project/assets/128487386/3b97f0dd-0aa4-406f-a906-40847e16272a">
+</p>
+
 
 ---
 
@@ -66,8 +70,10 @@
 
   마이페이지 창에서는 내가 좋아하는 아티스트를 추가할 수 있고 회원가입 후 로그인을 한 뒤 마이페이지로 이동하면 로그인/회원가입 때 입력했던 정보들이 마이페이지에 넘어가서 출력되게 한다.
 
-![10](https://github.com/wndnjs00/week3_sns_project/assets/128487386/42a25324-07f3-4bae-bddb-12798b503e4c)
-![11](https://github.com/wndnjs00/week3_sns_project/assets/128487386/57991bcc-caa0-4dc3-a6d8-a86b793d16c1)
+<p align="center">
+    <img src="https://github.com/wndnjs00/week3_sns_project/assets/128487386/42a25324-07f3-4bae-bddb-12798b503e4c">
+    <img src="https://github.com/wndnjs00/week3_sns_project/assets/128487386/57991bcc-caa0-4dc3-a6d8-a86b793d16c1">
+</p>
 
   ---
 
@@ -75,8 +81,9 @@
 
    로그인을 한 뒤에는 홈 화면 상단에도 유저의 정보에 따라서 안녕하세요 000님이 출력되고 마이페이지로 넘어갔을 때도 이름과 계정 정보가 전달된 것을 확인할 수 있다.
 
-![12](https://github.com/wndnjs00/week3_sns_project/assets/128487386/a47d1cc1-7894-4e42-8631-3589baae4668)
-![13](https://github.com/wndnjs00/week3_sns_project/assets/128487386/eec01cb5-e864-4b58-8b35-f436262924fa)
+<p align="center">
+    <img src="https://github.com/wndnjs00/week3_sns_project/assets/128487386/a47d1cc1-7894-4e42-8631-3589baae4668">
+    <img src="https://github.com/wndnjs00/week3_sns_project/assets/128487386/eec01cb5-e864-4b58-8b35-f436262924fa">
 
 <br>
 
