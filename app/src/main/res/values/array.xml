@@ -2,7 +2,7 @@
 <resources>
 
     <string-array name="itemList">
-        <item>선택안함</item>
+        <item>@string/no</item>
         <item>@string/bts</item>
         <item>@string/btob</item>
         <item>@string/idle</item>
