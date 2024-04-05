@@ -12,6 +12,7 @@ import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.addTextChangedListener
 import com.example.week3_sns_project.R
 import java.util.regex.Pattern
 
@@ -78,6 +79,34 @@ class SignUpActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable?) {
             }
         })
+
+        // 이메일 유효성 검사
+        var emailValidation = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"
+
+        fun checkEmail():Boolean {
+            var email = signupEmailEdittext.text.toString().trim()
+            val p = Pattern.matches(emailValidation, email)
+            if (p) {
+                signupEmailEdittext.setTextColor(getColor(R.color.black))
+                return true
+            } else {
+                signupEmailEdittext.setTextColor(getColor(R.color.red))
+                return false
+            }
+        }
+
+        signupEmailEdittext.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+
+            }
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+
+            }
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                checkEmail()
+            }
+        })
+
 
 
         signupBackButton.setOnClickListener {
