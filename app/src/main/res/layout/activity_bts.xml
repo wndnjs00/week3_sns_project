@@ -49,9 +49,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="20dp"
-                android:autoSizeTextType="uniform"
                 android:text="@string/bts_info1"
                 android:textSize="17sp"
+                android:autoSizeTextType="uniform"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/idol_title"
                 app:layout_constraintTop_toBottomOf="@+id/idol_title" />

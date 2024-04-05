@@ -2,6 +2,8 @@ package com.example.week3_sns_project
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
@@ -10,6 +12,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import java.util.regex.Pattern
 
 class LoginActivity : AppCompatActivity() {
 
@@ -51,6 +54,20 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
+        loginPasswordEdittext.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                // 텍스트가 변경될 때마다 호출된다.
+                // 비밀번호를 입력할 때 실시간으로 비밀번호 형식을 검사한다.
+                isRegularPwd(loginPasswordEdittext)
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+            }
+        })
+
         loginButton.setOnClickListener {
             if (loginEmailEdittext.length() == 0 || loginPasswordEdittext.length() == 0 || loginNameEdittext.length() == 0) {
                 Toast.makeText(this, getString(R.string.empty_info), Toast.LENGTH_SHORT).show()
@@ -83,6 +100,21 @@ class LoginActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+    }
+
+    private fun isRegularPwd(editText: EditText):Boolean {
+        val pwd = editText.text.toString().trim()
+        val pwdPattern = "^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[$@$!%*#?&.])[A-Za-z[0-9]$@$!%*#?&.]{8,16}$"
+        val pattern = Pattern.matches(pwdPattern,pwd)
+        if(pattern) {
+            //유효성 검사 결과 정해진 비밀번호 형식일 경우
+            editText.setTextColor(getColor(R.color.black))
+            return true
+        } else {
+            // 유효성 검사 결과 비밀번호 형식이 아니면 EditText 테두리를 빨간색으로 처리한다.
+            editText.setTextColor(getColor(R.color.red))
+            return false
         }
     }
 }
