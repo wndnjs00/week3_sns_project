@@ -19,7 +19,7 @@
 
 # 🤝팀소개 및 각자 맡은 역할
 ###### 저희는 성희영 튜터님도 인정해주시는 귀염뽀짝한 9조입니다😁
-<img src="https://github.com/wndnjs00/week3_sns_project/assets/115936076/e57b60a3-61ed-487d-a866-83fad7785794" width="500" height="500">
+![열심히 설명을 듣는 9조 모습](https://github.com/wndnjs00/week3_sns_project/blob/dev/bootcamp_9.png)
 
 ### 👨🏻‍💻정경우
 - 로그인, 회원가입 페이지 구현 (브랜치 이름: login)
