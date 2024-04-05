@@ -145,6 +145,14 @@
 
 <br>
 
+# 🔧 기술 스택
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
+![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Github](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white)
+
+<br>
+
 # 🔗노션 링크
 [첫번째 프로젝트 9조 노션](https://www.notion.so/teamsparta/9-a1fc0aee0cbd4249b95b294b0eccdcf3)
 
