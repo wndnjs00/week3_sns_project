@@ -68,6 +68,20 @@ class LoginActivity : AppCompatActivity() {
             }
         })
 
+        // 이메일 유효성 검사
+        // signupEmailEdittext에 TextWatcher 연결
+        loginEmailEdittext.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+            }
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                // text가 바뀔 때마다 호출
+                checkEmail()
+            }
+        })
+
+
         loginButton.setOnClickListener {
             if (loginEmailEdittext.length() == 0 || loginPasswordEdittext.length() == 0 || loginNameEdittext.length() == 0) {
                 Toast.makeText(this, getString(R.string.empty_info), Toast.LENGTH_SHORT).show()
@@ -106,6 +120,22 @@ class LoginActivity : AppCompatActivity() {
         } else {
             // 유효성 검사 결과 비밀번호 형식이 아니면 EditText 테두리를 빨간색으로 처리한다.
             editText.setTextColor(getColor(R.color.red))
+            return false
+        }
+    }
+
+    fun checkEmail():Boolean {
+        // 이메일 형식을 검사하는 정규식
+        val emailValidation = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"
+        val email = loginEmailEdittext.text.toString().trim()  //공백제거
+        val p = Pattern.matches(emailValidation, email)       // emailValidation과 email이 서로 패턴이 맞는지 확인
+        if (p) {
+            // 이메일 형식이 올바를경우 -> 텍스트색상 black
+            loginEmailEdittext.setTextColor(getColor(R.color.black))
+            return true
+        } else {
+            // 이메일 형식이 올바르지 않을경우 -> 텍스트색상 red
+            loginEmailEdittext.setTextColor(getColor(R.color.red))
             return false
         }
     }
